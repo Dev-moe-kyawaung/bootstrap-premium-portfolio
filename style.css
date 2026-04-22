@@ -1,0 +1,152 @@
+:root {
+  --bg-main: #0f172a;
+  --bg-alt: #111827;
+  --text: #ffffff;
+  --muted: #cbd5e1;
+  --primary: #3b82f6;
+  --card: rgba(255, 255, 255, 0.05);
+  --border: rgba(255, 255, 255, 0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(180deg, #0f172a, #020617);
+  color: var(--text);
+  font-family: "Pyidaungsu", sans-serif;
+}
+
+.custom-nav {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+  margin-left: 10px;
+}
+
+.navbar .nav-link:hover {
+  color: #60a5fa !important;
+}
+
+.hero-section {
+  min-height: 100vh;
+  padding-top: 100px;
+  background: radial-gradient(circle at top right, rgba(59,130,246,.25), transparent 30%),
+              radial-gradient(circle at bottom left, rgba(168,85,247,.18), transparent 30%);
+}
+
+.highlight {
+  color: #60a5fa;
+}
+
+.typing-text {
+  color: #c084fc;
+  min-height: 40px;
+}
+
+.social-icons a {
+  display: inline-block;
+  color: white;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #60a5fa;
+  transform: translateY(-4px);
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.bg-dark-alt {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.progress {
+  height: 24px;
+  border-radius: 50px;
+  background: rgba(255,255,255,0.08);
+}
+
+.service-card,
+.project-card,
+.contact-box {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 30px;
+  transition: 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+}
+
+.project-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.service-card:hover,
+.project-card:hover,
+.contact-box:hover {
+  transform: translateY(-8px);
+}
+
+.service-card i {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #60a5fa;
+}
+
+.form-control {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid var(--border);
+  color: white;
+  padding: 14px;
+}
+
+.form-control::placeholder {
+  color: #cbd5e1;
+}
+
+.form-control:focus {
+  background: rgba(255,255,255,0.1);
+  color: white;
+  box-shadow: none;
+  border-color: #60a5fa;
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  background: rgba(255,255,255,0.02);
+}
+
+.footer a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 50%;
+  display: none;
+  z-index: 999;
+}
+
